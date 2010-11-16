@@ -1,0 +1,19 @@
+jqWizard
+
+This project is a light weight wrapper around jQuery UI dialogs to create a wizard.
+
+It is Open Sourced under the Apache 2 license.
+
+Dependency:
+	jQuery
+	jQuery UI
+	jQuery UI Dialogs
+	Any jQuery UI Theme
+	
+To use it, simply drop the js and css files into your web app, and the images into your 
+images directory.
+
+Modify the example_jqw_layout.js file to reflect how you want your wizard structured, then edit 
+the divs in the index.html file to reflect your changes.
+
+Wizard it up!
