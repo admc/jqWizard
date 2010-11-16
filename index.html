@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Welcome to the jqWizard Exampel Page</title>
+	
+	<link type="text/css" href="css/pepper-grinder/jquery-ui-1.8.6.custom.css" rel="stylesheet" />
+	<link type="text/css" href="css/jqwizard.css" rel="stylesheet" />	
+	
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.6.custom.min.js"></script>
+	<script type="text/javascript" src="js/jqwizard.js"></script>
+	<script type="text/javascript" src="js/example_jqw_layout.js"></script>
+	
+	
+	<!-- Date: 2010-11-14 -->
+	<style type="text/css" media="screen">
+	  html {font: normal 110% OFL Sorts Mill GoudyRegular;}
+		@font-face {
+		  /* unlinked */
+		  font-family: "Stratounlinked";
+		  src: url("http://openfontlibrary.org/content/BSozoo/168/Strato-unlinked.ttf") format("truetype");
+		  font-weight:  400;
+		  font-style:   normal;
+		  font-variant: normal;
+		  font-stretch: normal;
+		}
+		@font-face {
+		  /* Regular */
+		  font-family: "HerbifloraRegular";
+		  src: url("http://openfontlibrary.org/content/ahyangyi/88/Herbiflora.ttf") format("truetype");
+		  font-weight:  400;
+		  font-style:   normal;
+		  font-variant: normal;
+		  font-stretch: normal;
+		}
+		@font-face {
+		  /* Regular */
+		  font-family: "OFL Sorts Mill GoudyRegular";
+		  src: url('http://themes.googleusercontent.com/font?kit=9ZZVVBRCceNnPBXqWLH8IBeHOylGMxdcwbe4vXI079w') format('truetype');
+		  font-weight:  400;
+		  font-style:   normal;
+		  font-variant: normal;
+		  font-stretch: normal;
+		}
+		@font-face {
+		  /* Normal */
+		  font-family: "PuritanNormal";
+		  src: url("http://openfontlibrary.org/content/benweiner/259/Puritan2.otf") format("opentype");
+		  font-weight:  400;
+		  font-style:   normal;
+		  font-variant: normal;
+		  font-stretch: normal;
+		}
+		@font-face {
+		  /* Normal */
+		  font-family: "Chunkfive";
+		  src: url("/fonts/Chunkfive-webfont.ttf") format("truetype");
+		  font-weight:  400;
+		  font-style:   normal;
+		  font-variant: normal;
+		  font-stretch: normal;
+		}
+		@font-face {
+		  font-family: 'Inconsolata';
+		  font-style: normal;
+		  font-weight: normal;
+		  src: url('http://themes.googleusercontent.com/font?kit=7bMKuoy6Nh0ft0SHnIGMuaCWcynf_cDxXwCLxiixG1c') format('truetype');
+		}
+
+		a {text-decoration:none; color:white;}
+	</style>
+</head>
+<body style="margin:0px;padding:0px;background:#975959;">
+		<center style="top:200px;position:relative;">
+			<p>
+				<h2>
+					<a href="#" onclick="jqwizard.init('FlexPilot Guide');" style="text-decoration:underline;color:white;">
+						Click Here to Start - jqWizard
+					</a>
+				</h2>
+			</center>
+	<div style="position:absolute;top:95%;left:2%">© 2010 Open Source Software</div>
+	
+	<div id="jqwIntro" style="display:none">
+	  <h3>Welcome to the jqWizard!</h3>
+	  <div style="padding:10px;font-size:15px;line-height:normal;">
+	    In a few steps, we'll get you up and running - doing some really great stuff
+	    <br><br>
+	    We've detected you are using <span onclick="jqwizard.selectOS()" class="jqwOS jqwBlueLink"></span>.<br>
+	    If not, please <span class="jqwBlueLink"  onclick="jqwizard.selectOS()">select your OS.</span>
+	    <br><br><br>
+	    <h2><center><span class="jqwBlueLink"  onclick="jqwizard.morphDialog('stepTwo')">Click here to continue</span>.</center></h2>
+	    <br>
+	  </div>
+	</div>
+
+	<div id="jqwStepOne" style="display:none">
+	  Welcome to Step One:<br>
+  	<p> A bunch of stuff goes here </p>
+	</div>
+
+	<div id="jqwStepTwo" style="display:none">
+	  <img class="jqwImg" src="./images/example_image.jpg">
+    <div class="jqwLangContainer">
+      <div class="jqwNav current" name="jqwSectionOne">
+        Section One &nbsp 
+					<span class="jqwArrow">
+						<img src="./images/jqwizard/arrow.png">	
+					</span>
+      </div>
+      <div class="jqwNav" name="jqwSectionTwo">
+        Section Two &nbsp <span class="jqwArrow"></span>
+      </div>
+      <div class="jqwNav" name="jqwSectionThree">
+        Section Three &nbsp <span class="jqwArrow"></span>
+      </div>
+      <div class="jqwNav" name="jqwSectionFour">
+        Section Four &nbsp <span class="jqwArrow"></span>
+      </div>
+    </div>
+
+    <div class="jqwMeat">
+
+      <div class="jqwSectionOne jqwFramework">
+        <h2>Section One</h2>
+ 				<p>Section One content is the awesome</p>
+      </div>
+
+      <div class="jqwSectionTwo jqwFramework" style="display:none">
+        <h2>Section Two</h2>
+     		<p>Section Two awesomeness</p>
+      </div>
+    </div>
+  </div>
+
+	<div id="jqwStepThree" style="display:none">
+	  Welcome to Step Three:<br>
+  	<p>A bunch of stuff goes here..</p>
+	</div>
+
+	<div id="jqwThanks" style="display:none;">
+	  <br>
+	  <div>
+	  	I hope you had the best time ever.
+	  </div>
+	</div>
+
+	<div id="jqwScreenshotContent" style="display:none;">
+	  <h3 style="margin:10px">Screenshot</h3>
+	</div>
+	<div id="jqwVideoContent" style="display:none;">
+	  <h3 style="margin:10px">Video</h3>
+	</div>
+</body>
+</html>
