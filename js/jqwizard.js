@@ -25,14 +25,14 @@ jqwizard.screen = "intro";
 
 jqwizard.defaultButtons = {
   "Back": function() { jqwizard.morphDialog("intro"); },
-  "It Worked!": function() { jqwizard.morphDialog("step2"); }
+  "Continue": function() { jqwizard.morphDialog("thanks"); }
 };
 //Outline the basic structure of the wizard
 jqwizard.layout = {
   intro: {
     buttons: {
       "No Thanks": function() { $(this).dialog("close"); },
-      "Continue": function() { jqwizard.morphDialog("lang"); }
+      "Continue": function() { jqwizard.morphDialog("stepTwo"); }
     },
     init: function() { if (!jqwizard.os) { $(".jqwOS").html(jqwizard.getOS()); } }
   }
